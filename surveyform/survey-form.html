@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="survey-form.css" type="text/css" rel="stylesheet"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p class="messege" id="description">Thank you for your help and companionship in this learning process</p>
+      </header>
+    <div class="survey">
+      <main>
+        <form id="survey-form">
+          <fieldset>
+            <legend>Basic Information</legend>
+            <label id="name-label">Enter Your Name: <input type="text" name="name" id="name" placeholder="Your name here..." required/></label>
+            <label id="email-label">Enter Your Email: <input type="email" name="email" id="email" placeholder="example@example.com" required/></label>
+            <label id="number-label">Enter Your Age: <input type="number" name="number" id="number" min="18" max="115" placeholder="18"/></label>
+          </fieldset>
+          <fieldset>
+            <legend>Choose Your Learning Path</legend> 
+            <label>Paths: 
+              <select id="dropdown" name="dropdown">
+                <option value="">(Select one)</option>
+                <option value="front">Front-End</option>
+                <option value="back">Back-End</option>
+                <option value="full">Full-Stack</option>
+              </select>
+            </label>  
+          </fieldset>
+          <fieldset>
+            <legend>Choose Your Role</legend>
+            <label><input type="radio" name="role" id="student" value="student" class="inline"/> Student</label>
+            <label><input type="radio" name="role" id="teacher" value="teacher" class="inline"/> Teacher</label>
+          </fieldset>
+          <fieldset>
+            <legend>Select Your Programming Languages to Learn</legend>
+            <label><input type="checkbox" name="languages" id="python" value="python" class="inline"/> Python</label>
+            <label><input type="checkbox" name="languages" id="java" value="java" class="inline"/> Java</label>
+            <label><input type="checkbox" name="languajes" id="javascript" value="javascript" class="inline"/> JavaScript</label>
+            <label><input type="checkbox" name="languages" id="c#" value="c#" class="inline"/> C#</label>
+            <label><input type="checkbox" name="languages" id="go" value="go" class="inline"/> Golang</label>
+          </fieldset>
+          <fieldset>
+            <legend>Additional Comments</legend>
+            <textarea name="comments" rows="5" cols="40" placeholder="some commentary here..."></textarea>
+          </fieldset>
+          <input type="submit" value="Submit" id="submit"/>
+        </form>
+      </main>
+      <footer>
+        <p>
+          Certification Project for <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>
+        </p>
+        <p>Responsive Web Design-Survey Form</p>
+      </footer>
+    </div>
+  </body>
+</html>
